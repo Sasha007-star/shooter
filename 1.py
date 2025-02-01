@@ -2,10 +2,13 @@ from pygame import *
 from random import randint 
 import time as pytime
 
+path_music = "asstestis\\sounds\\space.ogg.mp3"
+shut_sound = "asstestis\\sounds\\boom.ogg.mp3"
+
 mixer.init() 
-mixer.music.load('space.ogg.mp3')
+mixer.music.load(path_music)
 mixer.music.play()
-fire_sound = mixer.Sound('boom.ogg.mp3')
+fire_sound = mixer.Sound(shut_sound)
 
 font.init()
 font1 = font.Font(None, 80)
@@ -13,10 +16,10 @@ font2 = font.Font(None, 36)
 win = font1.render('YOU WIN!', True, (255, 255, 255))
 lose = font1.render('YOU LOSE!', True, (180, 0, 0))
 
-img_back = "background.png.png"
-img_hero = "rocket.png"
-img_bullet = "bullets.png"
-img_enemy = "enemy.png"
+img_back = "asstestis\\pictures\\background.png.png"
+img_hero = "asstestis\\pictures\\rocket.png"
+img_bullet = "asstestis\\pictures\\bullets.png"
+img_enemy = "asstestis\\pictures\\enemy.png"
 
 clock = time.Clock()
 FPS = 30
